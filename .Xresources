@@ -1,32 +1,33 @@
-! --- Apariencia de XTerm ---
+! --- Configuración de XTerm ---
 
 ! Tipo y tamaño de fuente (Usa TrueType)
-! xterm*faceName: Monospace:size=11
-xterm*faceName: Hack Nerd Font Mono
-xterm*faceSize: 11
+! XTerm*vt100.faceName: Monospace:size=11
+XTerm*vt100.faceName: Hack Nerd Font Mono
+XTerm*vt100.faceSize: 11
 
-! Parpadeo del cursos
-xterm*cursorBlink: true
+! Cusor
+XTerm*cursorBlink: true
+XTerm*cursorStyle: underline
 
 ! Colores (Esquema oscuro)
-xterm*foreground: white
-xterm*background: black
-xterm*cursorColor: #00ff00
+XTerm*vt100.foreground: white
+XTerm*vt100.background: black
+XTerm*vt100.cursorColor: #00ff00
 
 ! Tamaño de la ventana al abrir (Columnas x Filas)
-xterm*geometry: 158x57
+XTerm*vt100.geometry: 158x57
 
 ! Scrollback (Cuántas líneas puedes subir para leer)
-xterm*saveLines: 2000
+XTerm*vt100.saveLines: 2000
 
 ! Habilitar la barra de desplazamiento (opcional)
-xterm*scrollBar: false
-xterm*rightScrollBar: false
+XTerm*vt100.scrollBar: false
+XTerm*vt100.rightScrollBar: false
 
 ! Soporte de 256 colores
-xterm*termName: xterm-256color
+XTerm*vt100.termName: xterm-256color
 
 ! Configura "copiar y pegar" al estilo moderno
-xterm*translations: #override \
+XTerm*vt100.translations: #override \
 	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
